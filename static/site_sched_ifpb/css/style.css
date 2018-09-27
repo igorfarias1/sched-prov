@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.searchBox {
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url("../img/unnamed.png");
+    background-position: 5px 3px;
+    background-repeat: no-repeat;
+    padding: 2px 5px 4px 25px;
+}
+
+/*estiliza a div-mãe da caixa de pesquisa*/
+.search {
+	padding: 20% 0% 0%;
+	text-align: right;
+}
+
+.logoIFSubs {
+    height: 120px;
+    width: 247px;
+    margin: 10px auto 20px auto;
+}
+
+/*estiliza a barra de links (nav) horizontal*/
+.optionsnav {
+	background-color: #19702A;
+    color: #FFF;
+    text-align: left;
+}
+
+.optionsnav .container{
+	width: 960px;
+}
+/* estiliza os links da nav inividualmente*/
+.optionsnav a {
+    color: #FFF;
+    text-decoration: none;
+	font-size: 14px;
+	border-right: 1px solid #FFF;
+	padding: 0px 5px;
+}
+
+/* estiliza a div-mãe dos links*/
+.optionsnav div {
+    width: 50%;
+    margin: 0px auto;
+}
+
+/*
+'barra-brasil' não aparece como classe no html, mas sim como id
+.barra-brasil {
+    background: #f1f1f1;
+}*/
+
+/* estiliza o cabeçalho da pagina*/
+.barra-menu {
+	background: #414141;
+	height: 150px;
+
+}
+
+.barra-menu .container{
+	height: 130px;
+	width: 960px;
+}
+
+/*
+a seguinte classe (tableProff) pertence aos seguintes arquivos: 
+salas.html 
+docente_detalhes.html 
+laboratorios.html 
+cursos_detalhes.html 
+cursos.html 
+professores.html
+*/
+.tableProff {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.tableProff th, td {
+	text-align: left;
+  padding: 8px;
+}
+
+.tableProff tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.tableProff th {
+	background-color: #4CAF50;
+  color: white;
+}
+
+/*estiliza o formulário de login do administrador*/
+.login-form {
+	align-content: center;
+	max-width: 400px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	margin: auto;
+	background-color: #eeeeee;
+
+}
+
+.login-form label {
+	display: block;
+	font-size:13px;
+	width: 50px;
+}
+
+.login-form input{
+	display: block;
+}
+/*estiliza o botão de acessar do login-form*/
+.submit{
+	background-color: #2c962c;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	width: 390px;
+	padding: 10px;
+	margin: 5px;
+	cursor: pointer;
+	font-size:16px;
+}
+.submit:hover{
+	background-color: #19702A;
+}
+.form-row{
+	margin:5px;
+	
+}
+
+/* estilização dos ícones da pagina index (curso, sala, lab e prof)*/
+
+.icons{
+	margin: auto;
+}
+
+.container .row .col-12 .row{
+	padding:50px 0px;
+}
+
+.subtitles{
+	margin: auto;
+	
+}
+
+.icons figure{
+	text-align: center;
+	color: #27AE60;
+	font-weight: bolder;
+
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.table-list{
+	margin: 30px auto;
+	width: 100%;
+}
+.table-list, td, tr, th{
+	border: 1px solid rgb(100,100,100);
+}
+
+.table-list .head{
+	text-align: center;
+	color: white;
+}
+
+.table-list .main-head{
+	background-color: rgb(100,100,100);
+}
+
+.table-list .sec-head{
+	width:50%;
+	background-color:rgb(150, 150, 150);
+	
+}
+
+
+
+

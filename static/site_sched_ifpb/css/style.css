@@ -1,26 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
+.row{
+	margin-right: 0px;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
 }
 
-.searchBox {
-    border: 0px solid #ccc;
-    border-radius: 4px;
-    font-size: 12px;
-    background-color: white;
-    background-image: url("../img/unnamed.png");
-    background-position: 5px 3px;
-    background-repeat: no-repeat;
-    padding: 2px 5px 4px 25px;
-}
-
-/*estiliza a div-mãe da caixa de pesquisa*/
-.search {
-	padding: 20% 0% 0%;
-	text-align: right;
-}
 
 .logoIFSubs {
     height: 120px;
@@ -30,9 +18,9 @@ body {
 
 /*estiliza a barra de links (nav) horizontal*/
 .optionsnav {
-	background-color: #19702A;
+	background-color: #27AE60;
     color: #FFF;
-    text-align: left;
+	text-align: left;
 }
 
 .optionsnav .container{
@@ -43,10 +31,7 @@ body {
     color: #FFF;
     text-decoration: none;
 	font-size: 14px;
-	border-right: 1px solid #FFF;
-	padding: 0px 5px;
 }
-
 /* estiliza a div-mãe dos links*/
 .optionsnav div {
     width: 50%;
@@ -121,7 +106,7 @@ professores.html
 }
 /*estiliza o botão de acessar do login-form*/
 .submit{
-	background-color: #2c962c;
+	background-color: #27AE60;
 	color: white;
 	border: none;
 	border-radius: 8px;
@@ -132,7 +117,7 @@ professores.html
 	font-size:16px;
 }
 .submit:hover{
-	background-color: #19702A;
+	background-color: rgb(32, 139, 77);
 }
 .form-row{
 	margin:5px;
@@ -165,29 +150,25 @@ a:hover{
 	text-decoration: none;
 }
 
-.table-list{
-	margin: 30px auto;
-	width: 100%;
-}
-.table-list, td, tr, th{
-	border: 1px solid rgb(100,100,100);
-}
 
-.table-list .head{
-	text-align: center;
-	color: white;
-}
+/*Caixas de pesquisa:*/
 
-.table-list .main-head{
-	background-color: rgb(100,100,100);
-}
-
-.table-list .sec-head{
-	width:50%;
-	background-color:rgb(150, 150, 150);
+.search-container{
+	margin: 70px auto;
 	
 }
 
+.search-row{
+	margin: auto;
+}
 
-
+/* arrumar uma forma melhor de centralizar esse elemento*/
+.search-box{
+	margin: auto 381px;
+	border: 1px solid #27AE60;
+	border-radius: 10px;
+	padding: 5px 8px;
+	width: 300px;
+	
+}
 

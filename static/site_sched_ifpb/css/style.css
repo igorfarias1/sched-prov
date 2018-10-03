@@ -21,6 +21,7 @@ body {
 	background-color: #27AE60;
     color: #FFF;
 	text-align: left;
+	min-height: 24px;
 }
 
 .optionsnav .container{
@@ -166,9 +167,10 @@ a:hover{
 .search-box{
 	margin: auto 381px;
 	border: 1px solid #27AE60;
-	border-radius: 10px;
+	border-radius: 30px;
 	padding: 5px 8px;
 	width: 300px;
+	box-shadow:  2px 2px 4px #A4A4A4;
 	
 }
 

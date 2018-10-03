@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
     <head>
@@ -14,7 +14,7 @@
     </head>
 
     <body>
-
+<!-- Início da barra do governo -->
         <div id="barra-identidade">
             <div id="barra-brasil">
                 <div id="wrapper-barra-brasil">
@@ -64,7 +64,9 @@
             <script src="http://barra.brasil.gov.br/barra.js" type="text/javascript" defer="" async=""></script>
         </div>
 
+<!-- Fim da barra do governo -->
 
+<!-- Cabeçalho do site -->
         <div class="row">
             <div class="col-12 barra-menu">
                 <div class="container">
@@ -76,34 +78,75 @@
                 </div>
             </div>
         </div>
+<!-- Fim do cabeçalho do site -->
 
+<!-- Barra horizontal de links -->
         <div class="row">
             <div class="col-12 optionsnav">
                 <div class="container">
-                    
+                    <a>Início</a> <img src="../../../static/site_sched_ifpb/img/icons8-avançar-80.png" height="14px" width="14px"/> 
+                    <a>Cursos</a>
                 </div>
             </div>
         </div>
+<!-- Fim da barra horizontal de links -->
 
+<!-- Conteúdo da página -->
         <div class="container">
-					<div>
-						<table class="tableProff">
-							<tr>
-								<th style="text-align:center">Cursos</th>
-							</tr>
-						</table>
-						<p> </p>
-									<table class="tableProff">
-											<tr>
-													<th style="text-align:center">Nome</td>
-											</tr>
-											<tr>
-												<td> <a href="/curso/{{ cursos.id }}"></a> </th>
-											</tr>
-									
-									</table>
-					</div>
+            <div class= "row p-4">
+                <div class="col-12">
+                    <div class="search-container"> 
+                        <!-- Esta div contêm a caixa de pesquisa. 
+                            Quando o usuário digitar o curso que ele deseja, a grade com os itens vai sendo alterada dinamicamente 
+                            para ir aparecendo os itens que corresponderem à pesquisa-->
+                        <form class="search-form" action="" method="">
+                            <div class="search-row">
+                                <input class="search-box" type="text" placeholder="Curso"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row cursos-grid">
+                        <!-- Esta div contêm a grade de ícones, que consistirão em bolinhas com a inicial do ícone 
+                            e o nome do ícone embaixo
+                            A ideia é quatro a cinco ícones por linha
+                            Por ícones, entenda-se: ícones de curso, campus, professor, etc. -->
+                        <div class="icons">
+                            <a id="icon-prof" href="">
+                                <figure>
+                                    <img src="../../../static/site_sched_ifpb/img/icons8-círculo-desmarcado-80.png">
+                                    <figcaption>Exemplo</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="icons">
+                            <a id="icon-prof" href="">
+                                <figure>
+                                    <img src="../../../static/site_sched_ifpb/img/icons8-círculo-desmarcado-80.png">
+                                    <figcaption>Exemplo</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="icons">
+                            <a id="icon-prof" href="">
+                                <figure>
+                                    <img src="../../../static/site_sched_ifpb/img/icons8-círculo-desmarcado-80.png">
+                                    <figcaption>Exemplo</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="icons">
+                            <a id="icon-prof" href="">
+                                <figure>
+                                    <img src="../../../static/site_sched_ifpb/img/icons8-círculo-desmarcado-80.png">
+                                    <figcaption>Exemplo</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>          
         </div>
+<!-- Fim do conteúdo da página -->
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

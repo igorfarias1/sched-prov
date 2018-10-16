@@ -1,14 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
-.row{
-	margin-right: 0px;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 body {
+	font-family: 'Dosis', sans-serif;
 	margin: 0px;
 	padding: 0px;
 }
 
+.row{
+	margin-right: 0px;
+	margin-left: 0px;
+}
 
 .logoIFSubs {
     height: 120px;
@@ -39,12 +41,6 @@ body {
     margin: 0px auto;
 }
 
-/*
-'barra-brasil' não aparece como classe no html, mas sim como id
-.barra-brasil {
-    background: #f1f1f1;
-}*/
-
 /* estiliza o cabeçalho da pagina*/
 .barra-menu {
 	background: #414141;
@@ -55,34 +51,6 @@ body {
 .barra-menu .container{
 	height: 130px;
 	width: 960px;
-}
-
-/*
-a seguinte classe (tableProff) pertence aos seguintes arquivos: 
-salas.html 
-docente_detalhes.html 
-laboratorios.html 
-cursos_detalhes.html 
-cursos.html 
-professores.html
-*/
-.tableProff {
-	width: 100%;
-	border-collapse: collapse;
-}
-
-.tableProff th, td {
-	text-align: left;
-  padding: 8px;
-}
-
-.tableProff tr:nth-child(even) {
-	background-color: #f2f2f2;
-}
-
-.tableProff th {
-	background-color: #4CAF50;
-  color: white;
 }
 
 /*estiliza o formulário de login do administrador*/
@@ -120,7 +88,7 @@ professores.html
 .submit:hover{
 	background-color: rgb(32, 139, 77);
 }
-.form-row{
+.login-form .form-row{
 	margin:5px;
 	
 }
@@ -132,7 +100,7 @@ professores.html
 }
 
 .container .row .col-12 .row{
-	padding:50px 0px;
+	padding:35px 0px;
 }
 
 .subtitles{
@@ -151,11 +119,28 @@ a:hover{
 	text-decoration: none;
 }
 
+/*botões das páginas do adm:*/
+
+.add-button{
+	float: right;
+	border: 1px solid #3cc375;
+	background-color: #3cc375;
+	color: white;
+	border-radius: 30px;
+	padding: 5px 8px;
+	cursor: pointer;
+	
+}
+
+.add-button:hover{
+	border: 1px solid #27AE60;
+	background-color: #27AE60;
+}
 
 /*Caixas de pesquisa:*/
 
 .search-container{
-	margin: 70px auto;
+	margin: 50px auto;
 	text-align: center;
 	
 }
@@ -164,7 +149,7 @@ a:hover{
 	margin: auto;
 }
 
-/* arrumar uma forma melhor de centralizar esse elemento*/
+
 .search-box{
 	margin: auto;
 	border: 1px solid #27AE60;
@@ -179,3 +164,64 @@ a:hover{
 	width: 30px;
 }
 
+
+/*estiliza os formulários das funções do administrador*/
+form.add-form{
+	margin: auto;
+}
+
+form.add-form .form-div{
+	padding: 5px;
+}
+
+/*estiliza as legendas do formulário*/
+form.add-form label{
+	display: block;
+	float: left;
+	min-width: 220px;
+}
+
+/*estiliza todos os campos do formulário*/
+form.add-form div.form-div input, form.add-form div.form-div select{
+	border: 1px solid #27AE60;
+	border-radius: 30px;
+	padding: 5px 8px;
+	background-color: white;
+}
+
+form.add-form input:focus, form.add-form select:focus{
+	box-shadow: 0px 0px 4px #A4A4A4
+}
+
+form.add-form div.submit-row input{
+	cursor: pointer;
+	min-width: 100px;
+	margin: 10px 5px;
+	border-radius: 30px;
+	padding: 5px 8px;
+}
+
+/* primeiramente, trata do botão de 'salvar' em modo normal, depois trata dele em modo hover*/
+form.add-form div.submit-row input.save{
+	border: 1px solid #3cc375;
+	background-color: #3cc375;
+	color: white;
+	
+}
+
+form.add-form div.submit-row input.save:hover{
+	background-color: #27AE60;
+	border-color: #27AE60;
+}
+
+/* primeiramente, trata dos botões secundários em modo normal, depois trata deles em modo hover*/
+form.add-form div.submit-row input.save-cont{
+	border: 1px solid #e7e7e7;
+	background-color: #E7E7E7;
+	
+}
+
+form.add-form div.submit-row input.save-cont:hover{
+	background-color: #DADADA;
+	border-color: #DADADA;
+}

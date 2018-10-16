@@ -10,6 +10,7 @@
         <title>HIFPB</title>
 
         <link rel="stylesheet" href="../../../static/site_sched_ifpb/css/style.css">
+        <script src="https://unpkg.com/scrollreveal@4.0.4/dist/scrollreveal.min.js"></script>
 
     </head>
 
@@ -84,8 +85,7 @@
         <div class="row">
             <div class="col-12 optionsnav">
                 <div class="container">
-                    <a>Início</a> <img src="../../../static/site_sched_ifpb/img/icons8-avançar-80.png" height="14px" width="14px"/> 
-                    <a>Laboratórios</a>
+                    
                 </div>
             </div>
         </div>
@@ -93,61 +93,42 @@
 
 <!-- Conteúdo da página -->
         <div class="container">
-            <div class= "row p-4">
+            <div class="row p-4">
                 <div class="col-12">
-                    <div class="search-container"> 
-                        <!-- Esta div contêm a caixa de pesquisa. 
-                            Quando o usuário digitar o laboratório que ele deseja, a grade com os itens vai sendo alterada dinamicamente 
-                            para ir aparecendo os itens que corresponderem à pesquisa-->
-                        <form class="search-form" action="" method="">
-                            <div class="search-row">
-                                <input class="search-box" type="text" placeholder="Laboratório"/>
+                    <div class="row">
+                        <form class="add-form" action="" method="POST">
+                            <div>
+                                <fieldset>
+                                    <legend>Campus</legend>
+                                    <div class="form-div">
+                                        <label class="form-label">Unidade: *</label>
+                                        <input type="text" name="unidade"/>
+                                    </div>
+                                    <div class="form-div">
+                                        <label class="form-label">Cidade:</label>
+                                        <input type="text" name="cidade"/>
+                                    </div>
+                                    <div class="form-div">
+                                        <label class="form-label">Sigla:</label>
+                                        <input type="text" name="sigla"/>
+                                    </div>
+                                    
+                                </fieldset>
                             </div>
+                            <div class="submit-row">
+                                <input class="save" type="submit" value="Salvar"/>
+                                <input class="save-cont" type="submit" value="Salvar e adicionar outro"/>
+                                <input class="save-cont" type="submit" value="Salvar e continuar editando"/>
+                            </div>
+
                         </form>
                     </div>
-                    <div class="row cursos-grid">
-                        <!-- Esta div contêm a grade de ícones, que consistirão em bolinhas com a inicial do ícone 
-                            e o nome do ícone embaixo
-                            A ideia é quatro a cinco ícones por linha
-                            Por ícones, entenda-se: ícones de curso, campus, professor, etc. -->
-                        <div class="icons">
-                            <a id="icon-prof" href="">
-                                <figure>
-                                    <img src="../../../static/site_sched_ifpb/img/icons8-círculo-desmarcado-80.png">
-                                    <figcaption>Exemplo</figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="icons">
-                            <a id="icon-prof" href="">
-                                <figure>
-                                    <img src="../../../static/site_sched_ifpb/img/icons8-círculo-desmarcado-80.png">
-                                    <figcaption>Exemplo</figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="icons">
-                            <a id="icon-prof" href="">
-                                <figure>
-                                    <img src="../../../static/site_sched_ifpb/img/icons8-círculo-desmarcado-80.png">
-                                    <figcaption>Exemplo</figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="icons">
-                            <a id="icon-prof" href="">
-                                <figure>
-                                    <img src="../../../static/site_sched_ifpb/img/icons8-círculo-desmarcado-80.png">
-                                    <figcaption>Exemplo</figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                    </div>
                 </div>
-            </div>          
+            </div>
         </div>
 <!-- Fim do conteúdo da página -->
 
+        <script type="text/javascript" src="../../../script/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

@@ -1,0 +1,2 @@
+pesquisar:
+- dá pra pegar a pagina anterior a atual por html

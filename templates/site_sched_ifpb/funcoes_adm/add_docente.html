@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>HIFPB</title>
 
-        <link rel="stylesheet" href="../../static/site_sched_ifpb/css/style.css">
+        <link rel="stylesheet" href="../../../static/site_sched_ifpb/css/style.css">
         <script src="https://unpkg.com/scrollreveal@4.0.4/dist/scrollreveal.min.js"></script>
 
     </head>
@@ -73,7 +73,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-4 p-2">
-                            <a href="#"><img class="logoIFSubs" src="../../static/site_sched_ifpb/img/logoIFSubs.png"></a>
+                            <a href="#"><img class="logoIFSubs" src="../../../static/site_sched_ifpb/img/logoIFSubs.png"></a>
                         </div>
                     </div>
                 </div>
@@ -96,83 +96,60 @@
             <div class="row p-4">
                 <div class="col-12">
                     <div class="row">
-                        <!--Ícones com links para as páginas principais do site-->
-                        <div class="icons">
-                            <a id="icon-users" href="pages/usuarios.html">
-                                <figure>
-                                    <img src="../../static/site_sched_ifpb/img/icons8-grupo-de-usuário-homem-mulher-80.png">
-                                    <figcaption>Usuários</figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="icons">
-                            <a id="icon-campi" href="pages/campi.html">
-                                <figure>
-                                    <img src="../../static/site_sched_ifpb/img/icons8-universidade-80.png">
-                                    <figcaption>Campi</figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="icons">
-                                <a id="icon-curso" href="pages/cursos.html">
-                                    <figure>
-                                        <img src="../../static/site_sched_ifpb/img/icons8-chapéu-de-formatura-80.png">
-                                        <figcaption>Cursos</figcaption>
-                                    </figure>
-                                </a>
-                        </div>
-                        <div class="icons">
-                            <a id="icon-amb" href="pages/ambientes.html">
-                                <figure>
-<!-- fazer montagem aqui para botar um ícone de sala de aula + laboratório-->
-                                    <img src="../../static/site_sched_ifpb/img/icons8-sala-de-aula-80.png">
-                                    <figcaption>Ambientes</figcaption>
-                                </figure>
-                            </a>
-                        </div>
+                        <form class="add-form" action="" method="POST">
+                            <div>
+                                <fieldset>
+                                    <legend>Docente</legend>
+                                    <div class="form-div">
+                                        <label class="form-label">Nome Completo: *</label>
+                                        <input type="text" name="nome"/>
+                                    </div>
+                                    <div class="form-div">
+                                        <label class="form-label">CPF:</label>
+                                        <input type="text" name="cpf"/>
+                                    </div>
+                                    <div class="form-div">
+                                        <label class="form-label">Apelido: *</label>
+                                        <input type="text" name="apelido"/>
+                                    </div>
+                                    <div class="form-div">
+                                        <label class="form-label">Matrícula:</label>
+                                        <input type="text" name="matricula"/>
+                                    </div>
+                                    <div class="form-div">
+                                        <label class="form-label">Área de formação: *</label>
+                                        <input type="text" name="area_formacao"/>
+                                    </div>
+                                    <div class="form-div">
+                                        <label class="form-label">Email: *</label>
+                                        <input type="email" name="email"/>
+                                    </div>
+                                    <div class="form-div">
+                                        <label class="form-label">Telefone: </label>
+                                        <input type="text" name="telefone"/>
+                                    </div>
+                                    <div class="form-div">
+                                        <label class="form-label">Campus: *</label>
+                                        <select name="campus">
+
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="submit-row">
+                                <input class="save" type="submit" value="Salvar"/>
+                                <input class="save-cont" type="submit" value="Salvar e adicionar outro"/>
+                                <input class="save-cont" type="submit" value="Salvar e continuar editando"/>
+                            </div>
+
+                        </form>
                     </div>
-                    <div class="row">
-                            <!--Ícones com links para as páginas principais do site-->
-                            <div class="icons">
-                                <a id="icon-prof" href="pages/professores.html">
-                                    <figure>
-                                        <img src="../../static/site_sched_ifpb/img/icons8-grupos-de-usuários-80.png">
-                                        <figcaption>Professores</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="icons">
-                                <a id="icon-disc" href="pages/disciplinas.html">
-                                    <figure>
-                                        <img src="../../static/site_sched_ifpb/img/icons8-estante-de-livros-80.png">
-                                        <figcaption>Disciplinas</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <!-- Fazer: página de turmas -->
-                            <div class="icons">
-                                    <a id="icon-turmas" href="pages/turmas.html">
-                                        <figure>
-                                            <img src="../../static/site_sched_ifpb/img/icons8-sala-de-aula-80.png">
-                                            <figcaption>Turmas</figcaption>
-                                        </figure>
-                                    </a>
-                            </div>
-                            <div class="icons">
-                                <a id="icon-sair" href="">
-                                    <figure>
-                                        <img src="../../static/site_sched_ifpb/img/icons8-sair-80.png">
-                                        <figcaption>Sair</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                        </div>
                 </div>
             </div>
         </div>
 <!-- Fim do conteúdo da página -->
 
-        <script type="text/javascript" src="../../script/script.js"></script>
+        <script type="text/javascript" src="../../../script/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>HIFPB</title>
 
-        <link rel="stylesheet" href="../../static/site_sched_ifpb/css/style.css">
+        <link rel="stylesheet" href="../../../static/site_sched_ifpb/css/style.css">
         <script src="https://unpkg.com/scrollreveal@4.0.4/dist/scrollreveal.min.js"></script>
 
     </head>
@@ -73,7 +73,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-4 p-2">
-                            <a href="#"><img class="logoIFSubs" src="../../static/site_sched_ifpb/img/logoIFSubs.png"></a>
+                            <a href="#"><img class="logoIFSubs" src="../../../static/site_sched_ifpb/img/logoIFSubs.png"></a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,8 @@
         <div class="row">
             <div class="col-12 optionsnav">
                 <div class="container">
-                    
+                    <a>Início</a> <img src="../../../static/site_sched_ifpb/img/icons8-avançar-80.png" height="14px" width="14px"/>
+                    <a>Laboratórios</a>
                 </div>
             </div>
         </div>
@@ -93,86 +94,63 @@
 
 <!-- Conteúdo da página -->
         <div class="container">
-            <div class="row p-4">
+            <div class= "row p-4">
                 <div class="col-12">
-                    <div class="row">
-                        <!--Ícones com links para as páginas principais do site-->
+                    <div class="search-container"> 
+                        <!-- Esta div contêm a caixa de pesquisa. 
+                            Quando o usuário digitar o laboratório que ele deseja, a grade com os itens vai sendo alterada dinamicamente 
+                            para ir aparecendo os itens que corresponderem à pesquisa-->
+                        <form class="search-form" action="" method="">
+                            <div class="search-row">
+                                <img class="lupa" src="../../../static/site_sched_ifpb/img/icons8-pesquisar-80.png"/>
+                                <input class="search-box" type="text" placeholder="Laboratório"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row cursos-grid">
+                        <!-- Esta div contêm a grade de ícones, que consistirão em bolinhas com a inicial do ícone 
+                            e o nome do ícone embaixo
+                            A ideia é quatro a cinco ícones por linha
+                            Por ícones, entenda-se: ícones de curso, campus, professor, etc. -->
                         <div class="icons">
-                            <a id="icon-users" href="pages/usuarios.html">
+                            <a id="icon-prof" href="">
                                 <figure>
-                                    <img src="../../static/site_sched_ifpb/img/icons8-grupo-de-usuário-homem-mulher-80.png">
-                                    <figcaption>Usuários</figcaption>
+                                    <img src="../../../static/site_sched_ifpb/img/icons8-círculo-desmarcado-80.png">
+                                    <figcaption>Exemplo</figcaption>
                                 </figure>
                             </a>
                         </div>
                         <div class="icons">
-                            <a id="icon-campi" href="pages/campi.html">
+                            <a id="icon-prof" href="">
                                 <figure>
-                                    <img src="../../static/site_sched_ifpb/img/icons8-universidade-80.png">
-                                    <figcaption>Campi</figcaption>
+                                    <img src="../../../static/site_sched_ifpb/img/icons8-círculo-desmarcado-80.png">
+                                    <figcaption>Exemplo</figcaption>
                                 </figure>
                             </a>
                         </div>
                         <div class="icons">
-                                <a id="icon-curso" href="pages/cursos.html">
-                                    <figure>
-                                        <img src="../../static/site_sched_ifpb/img/icons8-chapéu-de-formatura-80.png">
-                                        <figcaption>Cursos</figcaption>
-                                    </figure>
-                                </a>
+                            <a id="icon-prof" href="">
+                                <figure>
+                                    <img src="../../../static/site_sched_ifpb/img/icons8-círculo-desmarcado-80.png">
+                                    <figcaption>Exemplo</figcaption>
+                                </figure>
+                            </a>
                         </div>
                         <div class="icons">
-                            <a id="icon-amb" href="pages/ambientes.html">
+                            <a id="icon-prof" href="">
                                 <figure>
-<!-- fazer montagem aqui para botar um ícone de sala de aula + laboratório-->
-                                    <img src="../../static/site_sched_ifpb/img/icons8-sala-de-aula-80.png">
-                                    <figcaption>Ambientes</figcaption>
+                                    <img src="../../../static/site_sched_ifpb/img/icons8-círculo-desmarcado-80.png">
+                                    <figcaption>Exemplo</figcaption>
                                 </figure>
                             </a>
                         </div>
                     </div>
-                    <div class="row">
-                            <!--Ícones com links para as páginas principais do site-->
-                            <div class="icons">
-                                <a id="icon-prof" href="pages/professores.html">
-                                    <figure>
-                                        <img src="../../static/site_sched_ifpb/img/icons8-grupos-de-usuários-80.png">
-                                        <figcaption>Professores</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="icons">
-                                <a id="icon-disc" href="pages/disciplinas.html">
-                                    <figure>
-                                        <img src="../../static/site_sched_ifpb/img/icons8-estante-de-livros-80.png">
-                                        <figcaption>Disciplinas</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <!-- Fazer: página de turmas -->
-                            <div class="icons">
-                                    <a id="icon-turmas" href="pages/turmas.html">
-                                        <figure>
-                                            <img src="../../static/site_sched_ifpb/img/icons8-sala-de-aula-80.png">
-                                            <figcaption>Turmas</figcaption>
-                                        </figure>
-                                    </a>
-                            </div>
-                            <div class="icons">
-                                <a id="icon-sair" href="">
-                                    <figure>
-                                        <img src="../../static/site_sched_ifpb/img/icons8-sair-80.png">
-                                        <figcaption>Sair</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                        </div>
                 </div>
-            </div>
+            </div>          
         </div>
 <!-- Fim do conteúdo da página -->
 
-        <script type="text/javascript" src="../../script/script.js"></script>
+        <script type="text/javascript" src="../../../script/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

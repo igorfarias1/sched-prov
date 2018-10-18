@@ -4,7 +4,7 @@
 // deve resetar para que sua animação aconteça de novo
 ScrollReveal({
     distance: '50px',
-    reset: true
+    reset: false
 });
 
 // Define a animação para todos os elementos que pertençam a classe icons

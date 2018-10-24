@@ -102,26 +102,29 @@
                                     <legend>Ambiente</legend>
                                     
                                     <div class="form-div">
-                                        <label class="form-label">Descrição: *</label>
-                                        <input type="text" name="descricao"/>
+                                        <label for="nom" class="form-label">Nome: *</label>
+                                        <input id="nom" type="text" name="nome"/>
+                                        <span class="form-hint">Digite um nome curto que identifique o ambiente. Exemplo: Lab Programação 1</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Tipo: *</label>
-                                        <select name="tipo">
+                                        <label for="tip" class="form-label">Tipo: *</label>
+                                        <select id="tip" name="tipo">
                                             <option value="" selected>------</option>
                                             <option value="S">Sala</option>
                                             <option value="L">Laboratório</option>
                                         </select>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Capacidade: *</label>
-                                        <input type="number" name="capacidade"/>
+                                        <label for="cap" class="form-label">Capacidade: *</label>
+                                        <input id="cap" type="number" name="capacidade"/>
+                                        <span class="form-hint">Digite a capacidade máxima de alunos no ambiente. Exemplo: 30</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Campus: *</label>
-                                        <select name="campus">
+                                        <label for="cam" class="form-label">Campus: *</label>
+                                        <select id="cam" name="campus">
 
                                         </select>
+                                        <span class="form-hint">Selecione o campus ao qual o ambiente pertence</span>
                                     </div>
                                 </fieldset>
                             </div>

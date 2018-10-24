@@ -179,6 +179,7 @@ form.add-form label{
 	display: block;
 	float: left;
 	min-width: 220px;
+	/*cursor: help;*/
 }
 
 /*estiliza todos os campos do formulário*/
@@ -222,6 +223,109 @@ form.add-form div.submit-row input.save-cont{
 }
 
 form.add-form div.submit-row input.save-cont:hover{
+	background-color: #DADADA;
+	border-color: #DADADA;
+}
+
+/*personaliza dicas para os formulários do adm*/
+.form-hint{
+	background: #27ae60;
+    border-radius: 3px 3px 3px 3px;
+	color: white;
+    margin-left:8px;
+    padding: 1px 6px;
+    z-index: 999; /* hints stay above all other elements */
+    position: absolute; /* allows proper formatting if hint is two lines */
+    display: none;
+}
+
+
+.form-div input:focus + .form-hint{
+ display: inline;
+}
+.form-div select:focus + .form-hint{
+	display: inline;
+   }
+
+.matutino, .vespertino, .noturno{
+	display: none;
+}
+
+/*estiliza a caixa de diálogo pop-up que se abre para escolher alguns campos dos formulários do admin
+ex: escolha de template em adicionar campus*/
+.popup-escolha{
+	position: fixed;
+	top: 25%;
+	left: 30%;
+	width: 40%;
+	height: 50%;
+	background-color: white;	
+	border-radius: 10px;
+	padding: 25px;
+	display: none;
+}
+
+.pesquisa-suspensa{
+	width: 100%;
+	margin: auto;
+	border: 1px solid #27AE60;
+	border-radius: 30px;
+	padding: 5px 8px;
+	box-shadow:  2px 2px 4px #A4A4A4;
+}
+
+.table-opcoes{
+	border: 1px solid black;
+	width:100%;
+	margin: 10px auto;
+}
+
+.table-opcoes td{
+	background-color: #e7e7e7;
+	border: 1px solid #A4A4A4;
+}
+
+.table-opcoes td a{
+	display: block;
+	width:100%;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.table-opcoes td:hover{
+	background-color: #a4a4a4;;
+	color: white;
+}
+
+.save-pop{
+	float: left;
+	cursor: pointer;
+	min-width: 100px;
+	margin: 10px 5px;
+	border-radius: 30px;
+	padding: 5px 8px;
+	border: 1px solid #3cc375;
+	background-color: #3cc375;
+	color: white;
+}
+
+.save-pop:hover{
+	background-color: #27AE60;
+	border-color: #27AE60;
+}
+
+.exit-pop{
+	float: left;
+	cursor: pointer;
+	min-width: 100px;
+	margin: 10px 5px;
+	border-radius: 30px;
+	padding: 5px 8px;
+	border: 1px solid #e7e7e7;
+	background-color: #E7E7E7;
+}
+
+.exit-pop:hover{
 	background-color: #DADADA;
 	border-color: #DADADA;
 }

@@ -101,47 +101,67 @@
                                 <fieldset>
                                     <legend>Disciplina</legend>
                                     <div class="form-div">
-                                        <label class="form-label">Descrição: *</label>
-                                        <input type="text" name="descricao"/>
+                                        <label for="nom" class="form-label">Nome: *</label>
+                                        <input id="nom" type="text" name="nome"/>
+                                        <span class="form-hint">Digite o nome da disciplina.</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Sigla: *</label>
-                                        <input type="text" name="sigla"/>
+                                        <label for="sig" class="form-label">Sigla: *</label>
+                                        <input id="sig" type="text" name="sigla"/>
+                                        <span class="form-hint">Digite uma sigla de rápida identificação para a disciplina. Exemplo: WEB</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Curso: *</label>
-                                        <select name="curso">
+                                        <label for="cur" class="form-label">Curso: *</label>
+                                        <select id="cur" name="curso">
 
                                         </select>
+                                        <span class="form-hint">Selecione o curso ao qual esta disciplina pertence.</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Período: *</label>
-                                        <input type="text" name="periodo"/>
+                                        <label for="per" class="form-label">Período: *</label>
+                                        <select id="per" name="periodo">
+                                            
+                                        </select>
+                                        <span class="form-hint">Selecione o período do curso no qual a disciplina é ofertada</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Código:</label>
-                                        <input type="text" name="codigo"/>
+                                        <label for="cre" class="form-label">Créditos: *</label>
+                                        <input id="cre" type="number" name="creditos"/>
+                                        <span class="form-hint">Digite a quantidade de créditos que a disciplina possui</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Carga Horária Total:</label>
-                                        <input type="number" name="carga_total"/>
+                                        <label for="com" class="form-label">É compartilhada?</label>
+                                        <input id="com" type="checkbox" name="compartilhada"/>
+                                        <span class="form-hint">Marque se a disciplina puder ser oferecida em outros cursos. Exemplo: Desenho Básico pode ser oferecido para Petróleo e Gás e Edificações</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Limite de Alunos:</label>
-                                        <input type="text" name="limite_alunos"/>
+                                        <label for="cod" class="form-label">Código:</label>
+                                        <input id="cod" type="text" name="codigo"/>
+                                        <span class="form-hint">Digite o código que a disciplina possui no SUAP</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Carga Horária Aula:</label>
-                                        <input type="number" name="carga_aula"/>
+                                        <label for="car" class="form-label">Carga Horária Total:</label>
+                                        <input id="car" type="number" name="carga"/>
+                                        <span class="form-hint">Digite a carga horária anual ou semestral da disciplina.</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Carga Horária Hora:</label>
-                                        <input type="number" name="carga_hora"/>
+                                        <label for="gru" class="form-label">Quantidade de grupos:</label>
+                                        <select>
+                                            <option value="0" selected>0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                        <span class="form-hint">Caso a disciplina seja dividida em grupos, selecione aqui a quantidade destes.</span>
                                     </div>
-                                    <div class="form-div">
-                                        <label class="form-label">Créditos: *</label>
-                                        <input type="number" name="creditos"/>
-                                    </div>
+                                    
+                                    
                                 </fieldset>
                             </div>
                             <div class="submit-row">

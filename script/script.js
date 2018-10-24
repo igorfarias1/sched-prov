@@ -10,3 +10,8 @@ ScrollReveal({
 // Define a animação para todos os elementos que pertençam a classe icons
 // Define o intervalo entre as animações de 200ms
 ScrollReveal().reveal('.icons', {interval : 200});
+
+
+function closePopUp(){
+    document.getElementById("popup").style.display = "none";
+}

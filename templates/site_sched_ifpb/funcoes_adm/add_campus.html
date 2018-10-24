@@ -101,16 +101,26 @@
                                 <fieldset>
                                     <legend>Campus</legend>
                                     <div class="form-div">
-                                        <label class="form-label">Unidade: *</label>
-                                        <input type="text" name="unidade"/>
+                                        <label for="uni" class="form-label">Unidade: *</label>
+                                        <input id="uni" type="text" name="unidade"/>
+                                        <span class="form-hint">Digite o nome identificador do campus. Exemplo: Campus Campina Grande</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Cidade:</label>
-                                        <input type="text" name="cidade"/>
+                                        <label for="cid" class="form-label">Cidade:</label>
+                                        <input id="cid" type="text" name="cidade"/>
+                                        <span class="form-hint">Digite a cidade onde o campus está localizado. Exemplo: Campina Grande</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Sigla:</label>
-                                        <input type="text" name="sigla"/>
+                                        <label for="sig" class="form-label">Sigla:</label>
+                                        <input id="sig" type="text" name="sigla"/>
+                                        <span class="form-hint">Digite uma sigla para o campus. Exemplo: CG</span>
+                                    </div>
+                                    <div class="form-div">
+                                        <label for="temp" class="form-label">Template de horários padrão:</label>
+                                        <select id="temp" name="template">
+                                            <option></option>
+                                        </select>
+                                        <span class="form-hint">Selecione o template que será usada por padrão pelos cursos desse campus.</span>
                                     </div>
                                     
                                 </fieldset>
@@ -127,7 +137,29 @@
             </div>
         </div>
 <!-- Fim do conteúdo da página -->
+<!-- Pop up que não está funcionando
 
+        <div id="popup" class="popup-escolha" >
+            <form class="form-escolha">
+                <input placeholder="Escolher template" type="text" name="template" class="pesquisa-suspensa">
+                <table class="table-opcoes">
+                    <tr>
+                        <td><a>Template diurno</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>Template matutino</a></td>
+                    </tr>
+                </table>
+
+                <input type="submit" class="save-pop" value="Salvar">
+                <button class="exit-pop" onclick="closePopUp()">Fechar</button>
+        
+            </form>
+            
+            
+        </div>
+-->
+        <script type="text/javascript" src="../../../script/formularios.js"></script>
         <script type="text/javascript" src="../../../script/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

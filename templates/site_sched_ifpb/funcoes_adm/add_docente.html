@@ -101,43 +101,57 @@
                                 <fieldset>
                                     <legend>Docente</legend>
                                     <div class="form-div">
-                                        <label class="form-label">Nome Completo: *</label>
-                                        <input type="text" name="nome"/>
+                                        <label for="nom" class="form-label">Nome Completo: *</label>
+                                        <input id="nom" type="text" name="nome"/>
+                                        <span class="form-hint">Digite o nome completo do professor. Exemplo: Danielle Chaves de Medeiros.</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Apelido: *</label>
-                                        <input type="text" name="apelido"/>
+                                        <label for="ape" class="form-label">Apelido: *</label>
+                                        <input id="ape" type="text" name="apelido"/>
+                                        <span class="form-hint">Digite um nome curto que identifique o professor. Exemplo: Danielle</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Campus: *</label>
-                                        <select name="campus">
+                                        <label for="cam" class="form-label">Campus: *</label>
+                                        <select id="cam" name="campus">
 
                                         </select>
+                                        <span class="form-hint">Selecione o campus ao qual o professor pertence. Exemplo: Campina Grande</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">CPF:</label>
-                                        <input type="text" name="cpf"/>
+                                        <label for="cpf" class="form-label">CPF:</label>
+                                        <input id="cpf" type="text" name="cpf"/>
+                                        <span class="form-hint">Digite o CPF do professor.</span>
                                     </div>
                                     
                                     <div class="form-div">
-                                        <label class="form-label">Matrícula:</label>
-                                        <input type="text" name="matricula"/>
+                                        <label for="mat" class="form-label">Matrícula:</label>
+                                        <input id="mat" type="text" name="matricula"/>
+                                        <span class="form-hint">Digite a matrícula do professor no SUAP.</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Área de formação:</label>
-                                        <input type="text" name="area_formacao"/>
+                                        <label for="are" class="form-label">Área de lotação:</label>
+                                        <input id="are" type="text" name="area_lotacao"/>
+                                        <span class="form-hint">Digite a área a qual o professor está lotado. Exemplo: Informática.</span>
                                     </div>
                                     <div class="form-div">
-                                        <label class="form-label">Email:</label>
-                                        <input type="email" name="email"/>
+                                        <label for="ema" class="form-label">Email:</label>
+                                        <input id="ema" type="email" name="email"/>
+                                        <span class="form-hint">Digite o email do professor.</span>
                                     </div>
                                     <div class="form-div">
                                         <label class="form-label">Telefone: </label>
                                         <input type="text" name="telefone"/>
+                                        <span class="form-hint">Digite o telefone do professor.</span>
                                     </div>
                                     <div class="form-div">
                                         <label class="form-label">Vínculo: </label>
-                                        <input type="text" name="vinculo"/>
+                                        <select name="vinculo">
+                                            <option value="" selected>-------</option>
+                                            <option value="E">Efetivo</option>
+                                            <option value="T">Temporário</option>
+                                        </select>
+                                        <span class="form-hint">Selecione o tipo de vínculo que o professor possui na instituição.</span>
+
                                     </div>
                                     
                                 </fieldset>

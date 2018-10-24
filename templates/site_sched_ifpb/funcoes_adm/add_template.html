@@ -3,6 +3,7 @@
 
     <head>
 
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
         <meta charset="utf-8">
@@ -99,40 +100,48 @@
                         <form class="add-form" action="" method="POST">
                             <div>
                                 <fieldset>
-                                    <legend>Curso</legend>
+                                    <legend>Template de Horários</legend>
                                     <div class="form-div">
-                                        <label for="nom" class="form-label">Nome: *</label>
-                                        <input id="nom" type="text" name="descricao"/>
-                                        <span class="form-hint">Digite o nome do curso. Exemplo: Informática.</span>
+                                        <label for="nome" class="form-label">Nome: *</label>
+                                        <input id="nome" type="text" name="nome"/>
+                                        <span class="form-hint">Digite um nome que identifique de alguma forma a grade. Exemplo: Template-Diurno</span>
                                     </div>
                                     <div class="form-div">
-                                        <label for="coor" class="form-label">Coordenador: *</label>
-                                        <select id="coor" name="coordenador">
-
-                                        </select>
-                                        <span class="form-hint">Selecione um docente como coordenador do curso.</span>
+                                        <label class="form-label" style="min-height: 72px;">Turnos de aula: *</label>
+                                        <input id="mat" type="checkbox" name="turnos" value="matutino"/><span> Matutino</span><br/> 
+                                        <input id="vesp" type="checkbox" name="turnos" value="vespertino"/><span> Vespertino</span><br/>
+                                        <input id="not" type="checkbox" name="turnos" value="noturno"/><span> Noturno</span>
+                                        <span class="form-hint">Digite quais turnos você deseja na grade.</span>
                                     </div>
-                                    <div class="form-div">
-                                        <label for="cam" class="form-label">Campus: *</label>
-                                        <select id="cam" name="campus">
-
-                                        </select>
-                                        <span class="form-hint">Selecione o campus ao qual pertence o curso.</span>
+                                    <div class="form-div matutino">
+                                        <label for="ini-itv-m" class="form-label">Início do Intervalo Matutino:</label>
+                                        <input id="ini-itv-m" type="time" name="ini-intervalo-m"/>
+                                        <span class="form-hint">Digite o horário inicial do intervalo da manhã. Exemplo: 09:30</span>
                                     </div>
-                                    <div class="form-div">
-                                        <label for="mod" class="form-label">Modalidade:</label>
-                                        <input id="mod" type="text" name="modalidade"/>
-                                        <span class="form-hint">Digite a modalidade do curso. Exemplo: Integrado.</span>
+                                    <div class="form-div matutino">
+                                        <label for="fim-itv-m" class="form-label">Fim do Intervalo Matutino:</label>
+                                        <input id="fim-itv-m" type="time" name="fim-intervalo-m"/>
+                                        <span class="form-hint">Digite o horário final do intervalo da manhã. Exemplo: 09:50</span>
                                     </div>
-                                    <div class="form-div">
-                                        <label class="form-label">Código:</label>
-                                        <input type="text" name="codigo"/>
-                                        <span class="form-hint">Digite o código identificador do curso.</span>
+                                    <div class="form-div vespertino">
+                                        <label for="ini-itv-v" class="form-label">Início do Intervalo Vespertino:</label>
+                                        <input id="ini-itv-v" type="time" name="ini-intervalo-v"/>
+                                        <span class="form-hint">Digite o horário inicial do intervalo da tarde. Exemplo: 15:30</span>
                                     </div>
-                                    <div class="form-div">
-                                        <label class="form-label">Duração:</label>
-                                        <input type="number" name="duracao"/>
-                                        <span class="form-hint">Digite a duração do curso em anos ou semestres.</span>
+                                    <div class="form-div vespertino">
+                                        <label for="fim-itv-v" class="form-label">Fim do Intervalo Vespertino:</label>
+                                        <input id="fim-itv-v" type="time" name="fim-intervalo-v"/>
+                                        <span class="form-hint">Digite o horário final do intervalo da tarde. Exemplo: 15:50</span>
+                                    </div>
+                                    <div class="form-div noturno">
+                                        <label for="ini-itv-n" class="form-label">Início do Intervalo Noturno:</label>
+                                        <input id="ini-itv-n" type="time" name="ini-intervalo-n"/>
+                                        <span class="form-hint">Digite o horário inicial do intervalo da noite. Exemplo: 20:30</span>
+                                    </div>
+                                    <div class="form-div noturno">
+                                        <label for="fim-itv-n" class="form-label">Fim do Intervalo Noturno:</label>
+                                        <input id="fim-itv-n" type="time" name="fim-intervalo-n"/>
+                                        <span class="form-hint">Digite o horário final do intervalo da noite. Exemplo: 20:50</span>
                                     </div>
                                     
                                     
@@ -151,7 +160,10 @@
         </div>
 <!-- Fim do conteúdo da página -->
 
-        <script type="text/javascript" src="../../../script/script.js"></script>
+
+        
+        <script type="text/javascript" src="../../../script/formularios.js"></script>
+        <script type="text/javascript" src="../../../script/script.js"></script>        
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

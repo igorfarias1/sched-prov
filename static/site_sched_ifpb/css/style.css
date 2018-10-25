@@ -175,7 +175,7 @@ form.add-form .form-div{
 }
 
 /*estiliza as legendas do formulário*/
-form.add-form label{
+form.add-form .form-div>label{
 	display: block;
 	float: left;
 	min-width: 220px;
@@ -225,6 +225,23 @@ form.add-form div.submit-row input.save-cont{
 form.add-form div.submit-row input.save-cont:hover{
 	background-color: #DADADA;
 	border-color: #DADADA;
+}
+
+.field-sec{
+	min-width: 100%;
+}
+
+.field-sec legend{
+	font-size: 19px;
+}
+.form-div-sec{
+	float:left;
+	margin-bottom: 10px;
+	margin-right: 20px;
+}
+
+.form-div-sec label{
+	min-width: 100px;
 }
 
 /*personaliza dicas para os formulários do adm*/
@@ -328,4 +345,9 @@ ex: escolha de template em adicionar campus*/
 .exit-pop:hover{
 	background-color: #DADADA;
 	border-color: #DADADA;
+}
+
+.table{
+	text-align: center;
+	margin-top: 10px;
 }

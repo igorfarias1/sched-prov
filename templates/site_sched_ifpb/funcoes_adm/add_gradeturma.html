@@ -3,7 +3,6 @@
 
     <head>
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
         <meta charset="utf-8">
@@ -100,38 +99,55 @@
                         <form class="add-form" action="" method="POST">
                             <div>
                                 <fieldset>
-                                    <legend>Template de Horários</legend>
+                                    <legend>Grade de turma</legend>
                                     <div class="form-div">
-                                        <label for="nome" class="form-label">Nome: *</label>
-                                        <input id="nome" type="text" name="nome"/>
-                                        <span class="form-hint">Digite um nome que identifique de alguma forma a grade. Exemplo: Template-IFPB-CG</span>
+                                        <label for="cur" class="form-label">Curso: *</label>
+                                        <select id="cur" type="text" name="curso">
+
+                                        </select>
+                                        <span class="form-hint">Selecione o curso ao qual esta turma pertence.</span>
                                     </div>
-                                    <div class="form-div" id="div-aulas-diurno">
-                                        <label class="form-label">Aulas do período diurno: *</label>
-                                        <img onclick="addAulaDiurno()" style="cursor: pointer;"  src="../../../static/site_sched_ifpb/img/icons8-mais-48.png" height="25px">
-                                        <img style="cursor: pointer;"  src="../../../static/site_sched_ifpb/img/icons8-menos-48.png" height="25px">
-                                        <fieldset class="field-sec">
-                                            <legend>Aula 1</legend>
-                                            <div class="form-div-sec"><label for="ini">Início da aula:</label><input id="ini" type="time" name="inicio_aula"></div>
-                                            <div class="form-div-sec"><label for="fim">Fim da aula:</label><input id="fim" type="time" name="fim_aula"></div>
-                                        </fieldset>
-                                        
+                                    <div class="form-div">
+                                        <label for="per" class="form-label">Período: *</label>
+                                        <input id="per" type="number" name="periodo_oferta"/>
+                                        <span class="form-hint">Selecione o período desta turma.</span>
                                     </div>
-                                    <div class="form-div" id="div-aulas-not">
-                                        <label class="form-label">Aulas do período noturno: *</label>
-                                        <img onclick="addAulaNot()" style="cursor: pointer;" src="../../../static/site_sched_ifpb/img/icons8-mais-48.png" height="25px">
-                                        <img style="cursor: pointer;" src="../../../static/site_sched_ifpb/img/icons8-menos-48.png" height="25px">
-                                        <fieldset class="field-sec">
-                                            <legend>Aula 1</legend>
-                                            <div class="form-div-sec"><label for="ini">Início da aula:</label><input id="ini" type="time" name="inicio_aula"></div>
-                                            <div class="form-div-sec"><label for="fim">Fim da aula:</label><input id="fim" type="time" name="fim_aula"></div>
-                                        </fieldset>
-                                        
+                                    <div class="form-div">
+                                        <label for="tur" class="form-label">Classe:</label>
+                                        <input id="tur" type="text" name="turma_oferta"/>
+                                        <span class="form-hint">Informe a classe desta turma. Exemplo: A, B, etc.</span>
                                     </div>
-                                    
-                                    
+                                </fieldset>
+                                <fieldset>
+                                    <table class="table table-striped">
+                                        <tr>
+                                            <th>Horários</th>
+                                            <th>Segunda</th>
+                                            <th>Terça</th>
+                                            <th>Quarta</th>
+                                            <th>Quinta</th>
+                                            <th>Sexta</th>
+                                        </tr>
+                                        <tr>
+                                            <td>07:00 - 07:50</td>
+                                            <td><img style="cursor: pointer;"  src="../../../static/site_sched_ifpb/img/icons8-mais-48.png" height="25px"></td>
+                                            <td><img style="cursor: pointer;"  src="../../../static/site_sched_ifpb/img/icons8-mais-48.png" height="25px"></td>
+                                            <td><img style="cursor: pointer;"  src="../../../static/site_sched_ifpb/img/icons8-mais-48.png" height="25px"></td>
+                                            <td><img style="cursor: pointer;"  src="../../../static/site_sched_ifpb/img/icons8-mais-48.png" height="25px"></td>
+                                            <td><img style="cursor: pointer;"  src="../../../static/site_sched_ifpb/img/icons8-mais-48.png" height="25px"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>07:50 - 08:40</td>
+                                            <td><img style="cursor: pointer;"  src="../../../static/site_sched_ifpb/img/icons8-mais-48.png" height="25px"></td>
+                                            <td><img style="cursor: pointer;"  src="../../../static/site_sched_ifpb/img/icons8-mais-48.png" height="25px"></td>
+                                            <td><img style="cursor: pointer;"  src="../../../static/site_sched_ifpb/img/icons8-mais-48.png" height="25px"></td>
+                                            <td><img style="cursor: pointer;"  src="../../../static/site_sched_ifpb/img/icons8-mais-48.png" height="25px"></td>
+                                            <td><img style="cursor: pointer;"  src="../../../static/site_sched_ifpb/img/icons8-mais-48.png" height="25px"></td>
+                                        </tr>
+                                    </table>
                                 </fieldset>
                             </div>
+
                             <div class="submit-row">
                                 <input class="save" type="submit" value="Salvar"/>
                                 <input class="save-cont" type="submit" value="Salvar e adicionar outro"/>
@@ -145,10 +161,7 @@
         </div>
 <!-- Fim do conteúdo da página -->
 
-
-        
-        <script type="text/javascript" src="../../../script/formularios.js"></script>
-        <script type="text/javascript" src="../../../script/script.js"></script>        
+        <script type="text/javascript" src="../../../script/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

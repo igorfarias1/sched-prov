@@ -1,24 +1,15 @@
-$("#mat").on('change', function(){
-    if($(".matutino").css("display") == "none"){
-        $(".matutino").show();
-    } else{
-        $(".matutino").hide();
-    }
-});
+var aulasDiurno = document.querySelector("#div-aulas-diurno");
+var aulasNoturno = document.querySelector("#div-aulas-not");
+var blocoAulaDiurno = document.querySelector("fieldset.field-sec");
 
-$("#vesp").on('change', function(){
-    if($(".vespertino").css("display") == "none"){
-        $(".vespertino").show();
-    } else{
-        $(".vespertino").hide();
-    }
-});
+function addAulaDiurno(){
+    let novoBlocoAula = blocoAulaDiurno.cloneNode(true);
 
-$("#not").on('change', function(){
-    if($(".noturno").css("display") == "none"){
-        $(".noturno").show();
-    } else{
-        $(".noturno").hide();
-    }
-});
+    aulasDiurno.append(novoBlocoAula);
+}
 
+function addAulaNot(){
+    let novoBlocoAula = blocoAulaDiurno.cloneNode(true);
+
+    aulasNoturno.append(novoBlocoAula);
+}

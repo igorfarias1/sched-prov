@@ -351,3 +351,7 @@ ex: escolha de template em adicionar campus*/
 	text-align: center;
 	margin-top: 10px;
 }
+
+.tabela-detalhes td{
+	text-align: left;
+}

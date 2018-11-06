@@ -355,3 +355,7 @@ ex: escolha de template em adicionar campus*/
 .tabela-detalhes td{
 	text-align: left;
 }
+
+.tabela-detalhes .col-princ{
+	font-weight: bolder;
+}
